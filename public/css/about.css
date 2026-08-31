@@ -1,0 +1,271 @@
+.page-hero {
+    width: min(100% - 40px, var(--container));
+
+    margin: 0 auto;
+
+    padding:
+        190px 0
+        120px;
+
+    border-bottom: 1px solid var(--border-secondary);
+}
+
+.page-hero h1 {
+    max-width: 850px;
+
+    margin-top: 20px;
+
+    font-size: clamp(60px, 9vw, 120px);
+    line-height: 0.9;
+
+    letter-spacing: -0.065em;
+}
+
+.page-hero h1 span {
+    display: block;
+
+    color: var(--text-secondary);
+}
+
+.page-hero p {
+    max-width: 580px;
+
+    margin-top: 35px;
+
+    color: var(--text-secondary);
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.about-content {
+    width: min(100% - 40px, var(--container));
+
+    margin: 0 auto;
+
+    padding: 120px 0;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+    border-bottom: 1px solid var(--border-secondary);
+}
+
+.about-copy {
+    max-width: 560px;
+
+    padding-top: 35px;
+
+    border-top: 1px solid var(--border-primary);
+}
+
+.about-copy p {
+    padding: 24px 0;
+
+    color: var(--text-secondary);
+
+    font-size: 17px;
+    line-height: 1.85;
+
+    border-bottom: 1px solid var(--border-primary);
+}
+
+.about-copy p + p {
+    margin-top: 0;
+}
+
+.about-focus {
+    width: min(100% - 40px, var(--container));
+
+    margin: 0 auto;
+
+    padding: 120px 0;
+
+    border-bottom: 1px solid var(--border-secondary);
+}
+
+.focus-grid {
+    margin-top: 75px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    border-top: 1px solid var(--border-primary);
+    border-left: 1px solid var(--border-primary);
+}
+
+.focus-card {
+    position: relative;
+
+    min-height: 260px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 32px;
+
+    border-right: 1px solid var(--border-primary);
+    border-bottom: 1px solid var(--border-primary);
+
+    background: var(--bg-secondary);
+
+    transition:
+        background var(--transition-normal),
+        transform var(--transition-normal),
+        border-color var(--transition-normal);
+}
+
+.focus-card:hover {
+    background: var(--bg-tertiary);
+}
+
+.focus-number {
+    color: var(--text-muted);
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+}
+
+.focus-card h3 {
+    margin-top: auto;
+
+    margin-bottom: 14px;
+
+    font-size: 24px;
+    line-height: 1.1;
+
+    letter-spacing: -0.035em;
+}
+
+.focus-card p {
+    max-width: 380px;
+
+    color: var(--text-secondary);
+
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.about-cta {
+    width: min(100% - 40px, var(--container));
+
+    margin: 0 auto;
+
+    padding: 150px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.about-cta h2 {
+    max-width: 800px;
+
+    margin-top: 18px;
+
+    font-size: clamp(50px, 7vw, 88px);
+    line-height: 0.95;
+
+    letter-spacing: -0.06em;
+}
+
+.about-cta h2 span {
+    display: block;
+
+    color: var(--text-secondary);
+}
+
+.about-cta .button {
+    margin-top: 35px;
+}
+
+@media (max-width: 900px) {
+
+    .page-hero,
+    .about-content,
+    .about-focus,
+    .about-cta {
+        width: min(100% - 28px, var(--container));
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .about-copy {
+        padding-top: 0;
+    }
+
+    .focus-grid {
+        margin-top: 60px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .page-hero {
+        padding:
+            150px 0
+            90px;
+    }
+
+    .page-hero h1 {
+        font-size: clamp(52px, 15vw, 70px);
+    }
+
+    .page-hero p {
+        margin-top: 28px;
+
+        font-size: 15px;
+    }
+
+    .about-content,
+    .about-focus {
+        padding: 90px 0;
+    }
+
+    .about-content {
+        gap: 35px;
+    }
+
+    .about-copy p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .focus-grid {
+        grid-template-columns: 1fr;
+
+        margin-top: 50px;
+    }
+
+    .focus-card {
+        min-height: 220px;
+
+        padding: 28px;
+    }
+
+    .focus-card h3 {
+        font-size: 22px;
+    }
+
+    .about-cta {
+        padding: 110px 0;
+    }
+
+    .about-cta h2 {
+        font-size: clamp(46px, 13vw, 62px);
+    }
+
+}
