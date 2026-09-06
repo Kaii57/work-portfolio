@@ -1,20 +1,25 @@
 {
   "name": "work-portfolio",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Personal developer portfolio for Kai.",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "start": "node server.js",
+      "dev": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+      "portfolio",
+      "developer",
+      "web-development"
+  ],
+  "author": "Kai",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "better-sqlite3": "^13.0.3",
-    "express": "^5.2.1"
+      "better-sqlite3": "^13.0.3",
+      "express": "^5.2.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+      "nodemon": "^3.1.14"
   }
 }
